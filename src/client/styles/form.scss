@@ -1,0 +1,46 @@
+@import "variables";
+// Main Section
+main {
+  padding: 20px;
+  margin-top: 40px;
+
+  section {
+    margin-bottom: 20px;
+  }
+
+  form#urlForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    input#name {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 400px;
+    }
+
+    button#submitButton {
+      padding: 10px 25px;
+      border: none;
+      background: $secondary-color;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: darken($secondary-color, 10%);
+      }
+    }
+  }
+
+  div#results {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+  }
+}
